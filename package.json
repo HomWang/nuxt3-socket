@@ -9,6 +9,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@unocss/nuxt": "^0.45.18",
+    "@unocss/transformer-directives": "^0.45.18",
     "nuxt": "3.0.0-rc.9"
   },
   "dependencies": {

@@ -1,0 +1,21 @@
+:root {
+  --colors-primary-50: #ecfdf5;
+  --colors-primary-100: #d1fae5;
+  --colors-primary-200: #a7f3d0;
+  --colors-primary-300: #6ee7b7;
+  --colors-primary-400: #34d399;
+  --colors-primary-500: #10b981;
+  --colors-primary-600: #059669;
+  --colors-primary-700: #047857;
+  --colors-primary-800: #065f46;
+  --colors-primary-900: #064e3b;
+}
+
+html, body {
+  --w-at-apply: p-0 m-0 text-white;
+  background-color: #1e1e1e;
+}
+
+.btn {
+  --w-at-apply: px-4;
+}
