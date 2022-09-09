@@ -5,6 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "prd": "pm2 start .output/server/index.mjs --name 'nuxt3-socket' -- run start",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {

@@ -17,7 +17,7 @@ export default (req: IncomingMessage, res: ServerResponse) => {
       socket.on('msg', (msg) => {
         console.log('Recived: ' + msg)
 
-        setTimeout(() => {
+        // setTimeout(() => {
           // socket.emit('msg', `Response to: ${msg}`)
           const data = {
             txt: msg,
@@ -27,7 +27,7 @@ export default (req: IncomingMessage, res: ServerResponse) => {
           socket.broadcast.emit('msg', data);
           // Send yourself a copy
           socket.emit('msg', data);
-        }, 1000)
+        // }, 1000)
       })
 
       socket.on('disconnect', () => console.log('disconnected'))

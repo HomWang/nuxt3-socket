@@ -3,7 +3,7 @@ import { io } from 'socket.io-client'
 const socket = io();
 const connected = ref(false)
 const msg = ref('')
-const getMsg = ref('')
+const getMsg = ref([])
 const hello = ref('')
 onMounted(() => {
   socket.on('connect', () => {
@@ -17,7 +17,7 @@ onMounted(() => {
     // socket.emit('my other event', { my: 'data' });
   });
   socket.on('msg', function (data) {
-    getMsg.value = data
+    getMsg.value.push(data)
     // socket.emit('my other event', { my: 'data' });
   });
 })
