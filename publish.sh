@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf pnpm-lock.yarml
+rm -rf pnpm-lock.yaml
 git pull
 pnpm install
 pnpm run build
